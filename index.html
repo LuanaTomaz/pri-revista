@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memória e Trabalho</title>
+  <meta name="description" content="Revista digital: Paraná, Curitiba e os ciclos que movem a história.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="titles">
+      <h1>Memória e Trabalho</h1>
+      <p>Paraná, Curitiba e os ciclos que movem a história</p>
+    </div>
+    <nav class="actions" aria-label="Ações">
+      <button type="button" id="toc-btn" aria-expanded="false" aria-controls="toc">Índice</button>
+      <a class="btn" href="revista.pdf" download>Baixar PDF</a>
+    </nav>
+    <ol id="toc" class="toc" hidden></ol>
+  </header>
+
+  <main class="stage" id="stage">
+    <button type="button" class="nav prev" id="prev" aria-label="Página anterior">‹</button>
+
+    <div class="viewport" id="viewport">
+      <div class="book" id="book" aria-live="polite"></div>
+      <div class="single" id="single" hidden>
+        <img id="single-img" alt="">
+      </div>
+    </div>
+
+    <button type="button" class="nav next" id="next" aria-label="Próxima página">›</button>
+  </main>
+
+  <footer class="bottom">
+    <span id="indicator" class="indicator">Capa</span>
+    <input type="range" id="slider" min="1" max="21" value="1" aria-label="Ir para a página">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
